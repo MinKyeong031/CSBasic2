@@ -38,7 +38,7 @@ namespace CSBasic2
             {
                 Console.WriteLine("오후 입니다");
             }
-            
+
             // if elseif else
             if (DateTime.Now.Hour < 11)
             {
@@ -53,12 +53,12 @@ namespace CSBasic2
                 Console.WriteLine("저녁 먹을 시간!");
             }
 
-            //switch 활용
-            Console.Write("숫자를 입력하세요 : ");
+            // switch 활용 
+            Console.Write("숫자를 입력하세요:");
             int input3 = int.Parse(Console.ReadLine());
-            const int ZERO = 0;
+            const int ZERO = 0; // magic number 주의
             const int ONE = 1;
-            switch(input3 % 2)
+            switch (input3 % 2)
             {
                 case ZERO:
                     Console.WriteLine("짝수");
@@ -68,9 +68,9 @@ namespace CSBasic2
                     break;
             }
 
-            Console.Write("이번 달은 몇 월인가요 : ");
+            Console.Write("이번 달은 몇 월인가요:");
             int input4 = int.Parse(Console.ReadLine());
-            switch (input4 % 2)
+            switch (input4)
             {
                 case 12:
                 case 1:
@@ -82,18 +82,7 @@ namespace CSBasic2
                 case 5:
                     Console.WriteLine("봄");
                     break;
-                case 6:
-                case 7:
-                case 8:
-                    Console.WriteLine("여름");
-                    break;
-                case 9:
-                case 10:
-                case 11:
-                    Console.WriteLine("가을");
-                    break;
-                default:
-                    Console.WriteLine("지구인가요?");
+
             }
         }
     }
